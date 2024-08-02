@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .texto-introductorio {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+            font-size: 18px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .producto {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+            transition: transform 0.3s;
+        }
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+        .producto h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .producto p {
+            font-size: 18px;
+            color: #555;
+        }
+        .producto:active {
+            transform: scale(1.05);
+            transition: transform 0.2s;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/logotipi.jpg" alt="Logotipo" class="logo">
+    </div>
+
+    <div class="texto-introductorio">
+        <h1>Bienvenidos a Nuestro Catálogo</h1>
+        <p>Aquí te ofrecemos manzanas a un precio real y accesible. Nuestras manzanas son frescas y de la mejor calidad. Encuentra las mejores ofertas en nuestro catálogo.</p>
+        <p>Donde ademas de manznas ricas te ofrcemos un exelente servicio y nos aseguramos de tener un buen trato a sia usted como cliente. </p>
+    </div>
+
+    <div class="catalogo">
+        <div class="producto">
+            <img src="img/manzana3.jpg" alt="Manzana Roja">
+            <h2>MANZANA BASICA</h2>
+            <p>$20.00</p>
+        </div>
+        <div class="producto">
+            <img src="img/manzana2.jpg" alt="Manzana Honeycrisp">
+            <h2>MANZANA PREMIUM </h2>
+            <p>$40.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="img/mazana4.jpg" alt="Manzana Honeycrisp">
+            <h2>MANZANA PREMIUM ALTO </h2>
+            <p>$45.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="img/mansana1.jpg" alt="Manzana Verde">
+            <h2>MANZANA INTERMEDIO</h2>
+            <p>$45.00</p>
+        </div>
+        <!-- Añadir más productos según sea necesario -->
+    </div>
+
+    <div class="footer">
+        <p>Contacto: info@tucatalogo.com | Tel: (123) 456-7890</p>
+        <p>&copy; 2024 Catálogo de Productos. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
